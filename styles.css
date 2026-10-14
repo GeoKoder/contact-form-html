@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial sans-serif;
+    background-color: #f3f4f6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-container h1 {
+    font-size: 24px;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.form-container p {
+    color: #6b7280;
+    margin-bottom: 32px;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #374151;
+    margin-bottom: 6px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 16px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s;
+    font-family: inherit;
+}
+
+input:focus, textarea:focus {
+    border-color: #2563eb;
+}
+
+input.error, textarea.error {
+    border-color: #ef4444;
+}
+
+input.valid, textarea.valid {
+    border-color: #22c55e;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.error-message {
+    color: #ef4444;
+    font-size: 13px;
+    margin-top: 4px;
+    display: none;
+}
+
+.char-count.warning {
+    color: #f59e0b;
+}
+
+.char-count.good {
+    color: #22c55e;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.submit-btn:disabled {
+    background-color: #93c5fd;
+    cursor: not-allowed;
+}
+
+.form-status {
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: none;
+}
+
+.form-status.success {
+    display: block;
+    background-color: #f0fdf4;
+    color: #15803d;
+    border: 1px solid #86efac;
+}
+
+.form-status.error-status {
+    display: block;
+    background-color: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fca5a5;
+}
