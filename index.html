@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Mctaba Academy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Contact Us</h1>
+        <p>Got a question about our courses? We would love to hear from you.</p>
+
+        <form class="contact-form" novalidate>
+            <div class="form-group">
+                <label for="name">Full name</label>
+                <input type="text" name="name" id="name" placeholder="e.g. Wanjiku Kamau">
+                <div class="error-message" id="name-error">Please enter your name</div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="e.g. wanjiku@example.com">
+                <div class="error-message" id="email-error">Please enter a valid email address</div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Tell us what you need help with..."></textarea>
+                <div class="char-count" id="message-count">0 / 10 characters minimum</div>
+                <div class="error-message" id="error-message">Message must be at least 10 characters</div>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submit-btn">Send Message</button>
+        </form>
+
+        <div class="form-status" id="form-status"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
