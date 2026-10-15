@@ -11,7 +11,7 @@
         <h1>Contact Us</h1>
         <p>Got a question about our courses? We would love to hear from you.</p>
 
-        <form class="contact-form" novalidate>
+        <form class="contact-form" id="contact-form" novalidate>
             <div class="form-group">
                 <label for="name">Full name</label>
                 <input type="text" name="name" id="name" placeholder="e.g. Wanjiku Kamau">
@@ -28,7 +28,7 @@
                 <label for="message">Message</label>
                 <textarea name="message" id="message" placeholder="Tell us what you need help with..."></textarea>
                 <div class="char-count" id="message-count">0 / 10 characters minimum</div>
-                <div class="error-message" id="error-message">Message must be at least 10 characters</div>
+                <div class="error-message" id="message-error">Message must be at least 10 characters</div>
             </div>
 
             <button type="submit" class="submit-btn" id="submit-btn">Send Message</button>

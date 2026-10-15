@@ -23,7 +23,7 @@ function validateName() {
     nameInput.classList.remove("error");
     nameInput.classList.add("valid");
     nameError.classList.remove("visible");
-    return false;
+    return true;
   }
 }
 
